@@ -21,6 +21,7 @@ class HopesController < ApplicationController
 
   # GET /hopes/1/edit
   def edit
+    @user = current_user
   end
 
   # POST /hopes
