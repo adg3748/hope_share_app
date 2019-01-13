@@ -16,7 +16,7 @@
     <% @hopes.each do |hope| %>
       <tr>
         <td><%= hope.content %></td>
-        <td><%= hope.image %></td>
+        <td><%#= hope.image %></td>
         <td><%= hope.user %></td>
         <td><%= link_to 'Show', hope %></td>
         <td><%= link_to 'Edit', edit_hope_path(hope) %></td>
