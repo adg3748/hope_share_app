@@ -1,5 +1,4 @@
 class HopesController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_hope, only: [:show, :edit, :update, :destroy]
 
   # GET /hopes
