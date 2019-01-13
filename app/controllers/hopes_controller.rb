@@ -16,6 +16,7 @@ class HopesController < ApplicationController
   # GET /hopes/new
   def new
     @hope = Hope.new
+    @user = current_user
   end
 
   # GET /hopes/1/edit
