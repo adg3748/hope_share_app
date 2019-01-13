@@ -7,6 +7,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%- if params[:controller] == "hopes" && params[:action] == "show" %>
+    <meta property="og:title" content="ชวนเพื่อนเล่นกิจกรรม มีสิทธิ์ลุ้นรับ Lucky box สุดเซอร์ไพรส์!!" itemprop="Lucky Quiz">
+    <meta property="og:description" content="ชวนเพื่อนเล่นกิจกรรม มีสิทธิ์ลุ้นรับ Lucky box สุดเซอร์ไพรส์!!" itemprop="Lucky Quiz">
+    <meta property="og:image" content="<%= @hope.image %>" itemprop="Lucky Quiz">
+    <meta property="og:image:secure_url" content="<%= @hope.image %>" itemprop="Lucky Quiz">
+    <meta property="og:image:type" content="image/jpeg" itemprop="Lucky Quiz">
+
+    <meta name="twitter:card" content="summary_large_image" itemprop="Lucky Quiz">
+    <meta name="twitter:image" content="<%= @hope.image %>" itemprop="Lucky Quiz">
+    <meta property="twitter:title" content="ชวนเพื่อนเล่นกิจกรรม มีสิทธิ์ลุ้นรับ Lucky box สุดเซอร์ไพรส์!!" itemprop="Lucky Quiz">
+    <meta property="twitter:description" content="ชวนเพื่อนเล่นกิจกรรม มีสิทธิ์ลุ้นรับ Lucky box สุดเซอร์ไพรส์!!" itemprop="Lucky Quiz">
+
+    <meta property="al:ios:url" content="sistacafe://">
+    <meta property="al:ios:app_store_id" content="1077262820">
+    <meta property="al:ios:app_name" content="Sistacafe">
+    <meta property="al:android:package" content="intent://com.donutsbkk.sistacafeapplication/#Intent;scheme=android.sistacafe;package=com.donutsbkk.sistacafeapplication;action=android.intent.action.VIEW;end">
+    <meta property="al:android:app_name" content="Sistacafe">
+    <%- end %>
   </head>
   <body>
   <p class="notice"><%= notice %></p>
