@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Hopes</h1>
+<h1>「え、これ私もやりたい一緒やろうよ」を作る、やりたいことメーカー</h1>
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
       <tr>
         <td><%= hope.content %></td>
         <td><%= image_tag "#{hope.image}" %></td>
-        <td><%= hope.user %></td>
+        <td><%= hope.user.id %></td>
         <td><%= link_to 'Show', hope %></td>
         <td><%= link_to 'Edit', edit_hope_path(hope) %></td>
         <td><%= link_to 'Destroy', hope, method: :delete, data: { confirm: 'Are you sure?' } %></td>
